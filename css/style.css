@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+body {
+  line-height: 1.8;
+  font-family: "lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #11245a;
+}
+
+.title-sm {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+a {
+  font-weight: 700;
+  transition: all 0.4s ease;
+}
+
+img {
+  width: 100%;
+}
+
+small {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(225, 218, 218, 0.419);
+}
+.navbar a {
+  color: #eedba5;
+}
+
+.logo-text {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.navbar .nav-link:hover {
+  color: #c7ae6a;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #c7ae6a;
+}
+
+#home {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.782),
+      #0f245dd6
+    ),
+    url(/img/herosec.jpg);
+  display: flex;
+  align-items: center;
+}
+
+#home h1 {
+  font-weight: 700;
+  max-width: 850px;
+}
+
+#home p {
+  max-width: 850px;
+  font-size: 17px;
+}
+
+.section-intro {
+  text-align: center;
+}
+
+.section-intro .hline {
+  width: 70px;
+  height: 2px;
+  background-color: #eedba5;
+  margin: 16px auto 10px auto;
+}
+.services-box {
+  transition: all 0.5s ease;
+  border: 1px solid transparent;
+}
+.services-box:hover {
+  border: 1px solid #eedaa5cb;
+  border-radius: 10px;
+  transform: scale(1.05);
+  -webkit-box-shadow: 1px 1px 13px 1px rgba(80, 81, 124, 0.55);
+  -moz-box-shadow: 1px 1px 13px 1px rgba(80, 81, 124, 0.55);
+  box-shadow: 1px 1px 13px 1px rgba(80, 81, 124, 0.55);
+}
+
+.services .services-box:hover .icon {
+  color: #eedba5;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  color: #11245a;
+  transition: all 0.5s;
+}
+
+.gym .gym-img {
+  position: relative;
+
+  transition: all 0.5s;
+}
+
+.gym .gym-loc {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 70%);
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+.gym .gym-loc:hover .gym-loc-text {
+  color: #11245a;
+  background-color: #eedba5;
+}
+.gym:hover .gym-loc {
+  opacity: 1;
+  transform: translate(-50%, 50%);
+}
+.gym-img-hd {
+  transition: all 0.5s;
+}
+.gym:hover .gym-img-hd {
+  filter: grayscale(100%);
+}
+
+.gym-loc-text {
+  background-color: #11245a;
+  color: #eedba5;
+  border-radius: 10px;
+  border: none;
+  font-size: 25px;
+  text-transform: uppercase;
+  display: inline;
+  padding: 10px 15px;
+  transition: all 0.3s;
+}
+.card {
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.accordion-button {
+  font-size: 1.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background-color: #11245a !important;
+  outline: none !important;
+  font-size: 1.5rem;
+}
+.accordion-button:focus {
+  border-color: #11245a !important;
+  box-shadow: none !important;
+}
+.accordion-body {
+  font-size: 18px;
+}
+
+.review p {
+  max-width: 700px;
+  margin: 24px auto;
+  font-style: italic;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #11245a !important;
+}
+.nav-link {
+  color: #11245a;
+  font-size: 30px;
+}
+.nav-link:hover {
+  color: #eedba5;
+}
+
+form .form-control:focus {
+  box-shadow: none;
+  border-color: #11245a;
+}
+
+.footer {
+  background-color: #212529;
+  color: #fff;
+}
+
+.logo-text {
+  color: #eedba5;
+  font-size: 2rem;
+}
+.footer-link {
+  display: block;
+  color: #eedba5;
+}
+
+.footer-link:active,
+.footer-link:visited {
+  color: #eedba5;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+.footer-icon {
+  height: 45px;
+  width: 45px;
+  color: #eedba5;
+  margin-right: 10px;
+}
+
+.color-scd {
+  color: #eedba5;
+}
+form small {
+  font-size: 14px;
+  color: #11245a;
+  font-family: inherit;
+}
+
+.contact-img {
+  border-radius: 10px;
+  filter: none;
+  transition: all 0.3s;
+}
+
+.contact-img:hover {
+  filter: grayscale(100%);
+}
